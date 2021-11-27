@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import './styles.scss';
 
@@ -6,9 +6,6 @@ import Avatars from '../Avatars';
 import Settings from '../Settings';
 
 const App = () => {
-  const [skinColor, setSkinColor] = useState('FCD7B8');
-  const [clotheColor, setClotheColor] = useState('B2C7C7');
-
   return (
     <div className="app">
       <div className="app__profile">
@@ -19,15 +16,9 @@ const App = () => {
           <p className="app__text">
             Lequel de ces deux avatars préfèrez-vous ?
           </p>
-          <Avatars
-            skinColor={ skinColor }
-            clotheColor={ clotheColor }
-          />
+          <Avatars />
           <div className="app__separator" />
-          <Settings
-            setSkinColor={ setSkinColor }
-            setClotheColor={ setClotheColor }
-          />
+          <Settings />
           <button className="app__button">
             Valider
           </button>

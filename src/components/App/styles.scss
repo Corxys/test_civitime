@@ -41,33 +41,6 @@
     background-color: vars.$separator-color;
   }
 
-  &__settings {
-    display: flex;
-    flex-direction: column;
-    margin: 10px 0px;
-  }
-
-  &__skin, &__clothe {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 10px;
-  }
-  
-  &__svg {
-    margin-right: 10px;
-  }
-  
-  &__colors {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-  
-  &__color {
-    cursor: pointer;
-  }
-
   &__button {
     background-color: vars.$button-color;
     color: vars.$primary-text-color;
@@ -83,7 +56,7 @@
 @media only screen and (min-width: 768px) {
   .app {
     &__profile {
-      width: 50%;
+      width: 600px;
     }
   }
 }

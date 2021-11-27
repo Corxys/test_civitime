@@ -1,0 +1,47 @@
+@use '../../styles/vars';
+
+.settings {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+
+  &__hair, &__skin, &__clothe {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+  }
+
+  &__color {
+    width: 42px;
+    margin-right: 10px;
+    border-radius: 45px;
+    box-shadow: vars.$item-not-selected;
+
+    &--selected {
+      box-shadow: vars.$item-selected;
+    }
+
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+
+  &__svg {
+    margin-right: 10px;
+
+    img {
+      width: 42px;
+    }
+  }
+  
+  &__colors {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  &__color {
+    cursor: pointer;
+  }
+}
