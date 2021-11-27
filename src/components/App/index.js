@@ -1,27 +1,25 @@
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 
 import './styles.scss';
 
-import Avatars from '../Avatars';
-import Settings from '../Settings';
+import ChooseYourAvatar from '../ChooseYourAvatar';
+import Welcome from '../Welcome';
 
 const App = () => {
   return (
     <div className="app">
-      <div className="app__profile">
-        <header className="app__header">
-          PROFIL
-        </header>
+      <div className="app__container">
+        <div className="app__profile">
+          <header className="app__header">
+            PROFIL
+          </header>
+        </div>
         <div className="app__content">
-          <p className="app__text">
-            Lequel de ces deux avatars préfèrez-vous ?
-          </p>
-          <Avatars />
-          <div className="app__separator" />
-          <Settings />
-          <button className="app__button">
-            Valider
-          </button>
+          <Routes>
+            <Route exact path="/" element={ <ChooseYourAvatar /> } />
+            <Route exact path="/bienvenue" element={ <Welcome /> } />
+          </Routes>
         </div>
       </div>
     </div>
