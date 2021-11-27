@@ -1,0 +1,38 @@
+.avatars {
+  display: flex;
+  flex-direction: row;
+
+    &__container {
+      margin: 25px 15px 40px 15px;
+    }
+
+    &__src{
+      height: 130px;
+      border-radius: 200px;
+      box-shadow: 3px 3px 5px -1px rgba(0, 0, 0, 0.219),
+      -3px -3px 5px -1px rgba(255, 255, 255, 0.5);
+    }
+}
+
+.skin {
+  stroke: #000000;
+  stroke-width: 1.0195;
+  stroke-miterlimit: 10;
+}
+
+.hair {
+  fill: #7B5B18;
+  stroke: #000000;
+  stroke-width: 1.0195;
+  stroke-miterlimit: 10;
+}
+
+.clothe {
+  stroke: #000000;
+  stroke-width: 1.0195;
+  stroke-miterlimit: 10;
+}
+
+.stripes {
+  fill: #DDDFE2;
+}

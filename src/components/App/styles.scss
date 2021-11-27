@@ -34,22 +34,6 @@
     border-radius: 0px 0px 5px 5px;
   }
 
-  &__avatars {
-    display: flex;
-    flex-direction: row;
-  }
-
-  &__avatar {
-    margin: 25px 15px 40px 15px;
-  }
-
-  &__src {
-    height: 130px;
-    border-radius: 200px;
-    box-shadow: 3px 3px 5px -1px rgba(0, 0, 0, 0.219),
-    -3px -3px 5px -1px rgba(255, 255, 255, 0.5);
-  }
-
   &__separator {
     display: block;
     width: 42%;
@@ -69,15 +53,19 @@
     align-items: center;
     margin: 10px;
   }
-
+  
   &__svg {
     margin-right: 10px;
   }
-
+  
   &__colors {
     display: flex;
     flex-direction: row;
     align-items: center;
+  }
+  
+  &__color {
+    cursor: pointer;
   }
 
   &__button {
